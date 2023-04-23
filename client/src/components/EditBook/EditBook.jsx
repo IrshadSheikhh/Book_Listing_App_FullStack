@@ -13,7 +13,7 @@ const EditBook = () => {
 
   const handleUpdateBook = async () => {
     try {
-      await axios.put(`http://localhost:5000/api/books/${bookId}`, {
+      await axios.put(`https://book-listing-app-backend-irshad3.onrender.com/api/books/${bookId}`, {
         title,
         author,
         genre,
@@ -27,7 +27,7 @@ const EditBook = () => {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/books/${bookId}`);
+        const response = await axios.get(`https://book-listing-app-backend-irshad3.onrender.com/api/books/${bookId}`);
         setBook(response.data);
         setTitle(response.data.title);
         setAuthor(response.data.author);

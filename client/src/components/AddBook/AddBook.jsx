@@ -27,7 +27,7 @@ const AddBook = ({ onSubmit }) => {
       publisher
     };
     try {
-     await axios.post("http://localhost:5000/api/books",newBook);
+     await axios.post("https://book-listing-app-backend-irshad3.onrender.com/api/books",newBook);
       //localStorage.setItem("user", JSON.stringify(data));
     } catch (err) {
       console.log(err);

@@ -22,7 +22,7 @@ const HomePage = ({ handleAddBook }) => {
 
   const handleDeleteBook = async (bookId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/books/${bookId}`);
+      await axios.delete(`https://book-listing-app-backend-irshad3.onrender.com/api/books/${bookId}`);
       // Update the books state to reflect the deleted book
       setBooks(books.filter(book => book.id !== bookId));
     } catch (error) {
@@ -33,7 +33,7 @@ const HomePage = ({ handleAddBook }) => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/books");
+        const response = await axios.get("https://book-listing-app-backend-irshad3.onrender.com/api/books");
         setBooks(response.data);
       } catch (error) {
         console.log(error);

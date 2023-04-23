@@ -22,7 +22,7 @@ const Register = ({ history }) => {
       return setError("Passwords do not match");
     }
      else {
-      navigate("/");
+      navigate("https://book-listing-app-backend-irshad3.onrender.com/");
      }
 
     try {

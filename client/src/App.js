@@ -24,7 +24,7 @@ function App() {
   const handleDeleteBook = async (bookId) => {
     try {
       // Delete book from server
-      await fetch(`http://localhost:5000/api/books/${bookId}`, {
+      await fetch(`https://book-listing-app-backend-irshad3.onrender.com/api/books/${bookId}`, {
         method: 'DELETE'
       });
       // Update books state by filtering out the deleted book

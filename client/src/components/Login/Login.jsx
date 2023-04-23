@@ -24,7 +24,7 @@ const Login = () => {
   };
 
   if (loggedIn) {
-    return <Navigate to="/home" />;
+    return <Navigate to="https://book-listing-app-backend-irshad3.onrender.com/home" />;
   }
   
   return (
